@@ -71,10 +71,17 @@ ul {
 }
 
 @media (min-width: 1120px) {
+  body {
+    background: url(./images/bkgdesktop.png);
+  }
+
   main {
+    margin-top: 9rem;
     flex-direction: row;
     max-width: fit-content;
     gap: 16rem;
+
+    padding: 9rem 6rem;
   }
 
   .recipe {
@@ -83,5 +90,24 @@ ul {
 
   .ingredients {
     max-width: 52.5rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  p,
+  li,
+  strong {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
 }
