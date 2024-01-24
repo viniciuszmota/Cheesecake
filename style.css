@@ -22,10 +22,16 @@ main {
   margin-inline: auto;
 
   padding: 5.6rem 4rem;
+  box-sizing: content-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
 image {
   width: 100%;
+  margin-block: 3.2rem;
 }
 
 button {
@@ -35,10 +41,11 @@ button {
   color: white;
 
   border: 0;
-  padding: 0.8rem 1.3rem;
+  padding: 0.8rem 1.2rem;
+
   border-radius: 0.6rem;
 
-  margin-top: 1.8rem;
+  margin-top: 3.2rem;
 }
 
 h1,
@@ -52,4 +59,29 @@ li,
 strong {
   font-size: 1.4rem;
   line-height: 1.8rem;
+}
+
+ul,
+ol {
+  padding-left: 2.4rem;
+}
+
+ul {
+  margin-bottom: 2.4rem;
+}
+
+@media (min-width: 1120px) {
+  main {
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 16rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+
+  .ingredients {
+    max-width: 52.5rem;
+  }
 }
